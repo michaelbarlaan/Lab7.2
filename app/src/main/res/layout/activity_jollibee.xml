@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jollibee">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="365dp"
+        android:layout_height="34dp"
+        android:text="Avg. Cost: PHP200 for two people"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="260dp"
+        android:layout_height="37dp"
+        android:text="Cuisines: Fast Foods"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="390dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="320dp"
+        android:layout_height="37dp"
+        android:text="Phone number:       (+63 2) 712-5567"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="364dp"
+        android:layout_height="53dp"
+        android:text="Address:  A.H. Lacson St., cor. Dapitan St., Sampaloc, Manila, Metro Manila, Philippines"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="258dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="255dp"
+        android:layout_height="59dp"
+        android:text="Jollibee"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="386dp"
+        android:layout_height="187dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/jb"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+</android.support.constraint.ConstraintLayout>
