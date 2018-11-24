@@ -9,58 +9,68 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
-public class MainActivity extends AppCompatActivity {
-
-
+public class Lacson extends AppCompatActivity {
 
     public void process (View v) {
         Intent i = null, chooser = null;
 
-        if (v.getId() == R.id.dimsumtreats) {
+        if (v.getId() == R.id.bigguy) {
 
-            i = new Intent(this, dimsumTreats.class);
+            i = new Intent(this, bigguys.class);
 
             startActivity(i);
         }
 
 
+        if (v.getId() == R.id.mcdo) {
 
-            if (v.getId() == R.id.jollibee) {
+            i = new Intent(this, mcdo.class);
 
-                i = new Intent(this, jollibee.class);
+            startActivity(i);
+        }
+        if (v.getId() == R.id.ilar) {
 
-                startActivity(i);
-            }
+            i = new Intent(this, ilars.class);
 
+            startActivity(i);
+        }
+        if (v.getId() == R.id.jackos) {
 
+            i = new Intent(this, jackos.class);
 
+            startActivity(i);
+        }
+        if (v.getId() == R.id.ichill) {
 
+            i = new Intent(this, ichill.class);
 
+            startActivity(i);
+        }
+        if (v.getId() == R.id.xtreme) {
 
+            i = new Intent(this, xtreme.class);
 
+            startActivity(i);
+        }
+        if (v.getId() == R.id.octane) {
 
+            i = new Intent(this, octane.class);
 
+            startActivity(i);
+        }
+    }
 
-
-
-
-         };
-
-
-
-    //String [] SPINNERLIST={"DAPITAN", "P.NOVAL", "ESPANYA", "LACSON"};
-    //@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_lacson);
         final int currentItem = 0;
         Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
 
 
-        ArrayAdapter<String> myAdapter = new ArrayAdapter<>(MainActivity.this,
-                android.R.layout.simple_list_item_1,  getResources().getStringArray(R.array.names));
+        ArrayAdapter<String> myAdapter = new ArrayAdapter<>(Lacson.this,
+                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.names));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(myAdapter);
 
@@ -68,16 +78,16 @@ public class MainActivity extends AppCompatActivity {
 
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-
                 if(currentItem==position){
                     return;
+
                 }else{
-                    Intent intent = new Intent(MainActivity.this,Lacson.class);
+                    Intent intent = new Intent(Lacson.this,MainActivity.class);
                     startActivity(intent);
                     Toast.makeText(parent.getContext(),
                             "OnItemSelected: " + parent.getItemAtPosition(position).toString(),
                             Toast.LENGTH_SHORT).show();
-            }
+                }
             }
 
             @Override
@@ -86,14 +96,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,SPINNERLIST);
-        //MaterialBetterSpinner betterSpinner=(MaterialBetterSpinner)findViewById(R.id.android_material_design_spinner);
-        //betterSpinner.setAdapter(arrayAdapter);
-
-
-
-
 
     }
 }
-

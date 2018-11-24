@@ -17,7 +17,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".dimsumTreats" />
-        <activity android:name=".jollibee"></activity>
+        <activity android:name=".jollibee" />
+        <activity android:name=".Lacson" />
+        <activity android:name=".bigguys" />
+        <activity android:name=".mcdo" />
+        <activity android:name=".ilars" />
+        <activity android:name=".ichill" />
+        <activity android:name=".jackos" />
+        <activity android:name=".octane" />
+        <activity android:name=".xtreme"></activity>
     </application>
 
 </manifest>

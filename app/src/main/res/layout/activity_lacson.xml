@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Lacson">
 
     <TextView
         android:id="@+id/textView"
@@ -47,7 +47,7 @@
         app:layout_constraintVertical_bias="0.176" />
 
     <ImageButton
-        android:id="@+id/dimsumtreats"
+        android:id="@+id/bigguy"
         android:layout_width="69dp"
         android:layout_height="69dp"
         android:layout_marginBottom="8dp"
@@ -65,10 +65,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.543"
-        app:srcCompat="@drawable/dt" />
+        app:srcCompat="@drawable/bigguys" />
 
     <ImageButton
-        android:id="@+id/jollibee"
+        android:id="@+id/ilar"
         style="@android:style/Widget.ImageButton"
         android:layout_width="69dp"
         android:layout_height="69dp"
@@ -87,10 +87,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.543"
-        app:srcCompat="@drawable/jb" />
+        app:srcCompat="@drawable/ilars" />
 
     <ImageButton
-        android:id="@+id/manginasal"
+        android:id="@+id/jackos"
         android:layout_width="69dp"
         android:layout_height="69dp"
         android:layout_marginBottom="8dp"
@@ -100,16 +100,17 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:scaleType="fitCenter"
+        android:onClick="process"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.543"
-        app:srcCompat="@drawable/mi" />
+        app:srcCompat="@drawable/jackos" />
 
     <ImageButton
-        android:id="@+id/KFC"
+        android:id="@+id/ichill"
         android:layout_width="69dp"
         android:layout_height="69dp"
         android:layout_marginBottom="8dp"
@@ -119,13 +120,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:scaleType="fitCenter"
+        android:onClick="process"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.973"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.543"
-        app:srcCompat="@drawable/kfc" />
+        app:srcCompat="@drawable/ichill2" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -185,7 +187,7 @@
         app:layout_constraintVertical_bias="0.381" />
 
     <ImageButton
-        android:id="@+id/armynavy"
+        android:id="@+id/octane"
         android:layout_width="69dp"
         android:layout_height="69dp"
         android:layout_marginBottom="8dp"
@@ -195,16 +197,17 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:scaleType="fitCenter"
+        android:onClick="process"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.026"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.776"
-        app:srcCompat="@drawable/an" />
+        app:srcCompat="@drawable/octaneblend" />
 
     <ImageButton
-        android:id="@+id/starbucks"
+        android:id="@+id/mcdo"
         android:layout_width="69dp"
         android:layout_height="69dp"
         android:layout_marginBottom="8dp"
@@ -214,16 +217,17 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:scaleType="fitCenter"
+        android:onClick="process"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.321"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.776"
-        app:srcCompat="@drawable/sb" />
+        app:srcCompat="@drawable/mcdo" />
 
     <ImageButton
-        android:id="@+id/wendys"
+        android:id="@+id/xtreme"
         android:layout_width="69dp"
         android:layout_height="69dp"
         android:layout_marginBottom="8dp"
@@ -233,12 +237,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:scaleType="fitCenter"
+        android:onClick="process"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.776"
-        app:srcCompat="@drawable/wendys" />
+        app:srcCompat="@drawable/xtreme" />
 
 </android.support.constraint.ConstraintLayout>
